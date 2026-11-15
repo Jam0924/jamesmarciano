@@ -44,10 +44,18 @@ html, body, head, p{
     height: var(--xlarge-icon);
     background-color: purple;
     aspect-ratio: 1/1;
-    z-index: 1;
-    position: absolute;
+    position: fixed;
     margin-left: var(--xsmall-gap);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
+.navigate-button{
+    background-color :orangered;
+    position: sticky;
+    height: var(--large-icon);
+    aspect-ratio: 1/1;
 }
 
 .title-text-container{
