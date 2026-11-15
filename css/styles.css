@@ -1,3 +1,78 @@
-.testingClass{
-    color: blue;
+
+:root{
+    --medium-icon: 24px;
+    --large-icon: 48px;
+    --xlarge-icon: 64px;
+
+    --xsmall-gap: 8px;
+    --small-gap: 16px;
+    --medium-gap: 32px;
 }
+
+html, body, head, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.website-container{
+    width: 100vw;
+    background-color:orange;
+    display: grid;
+    grid-template-areas:
+    "title-bar"
+    "about-me-bar"
+    "expereience-bar"
+    "projects-bar"
+    "skills-bar"
+    "contacts-bar"
+    "timeline-bar"; /* might be exempt */
+    row-gap: var(--medium-gap);
+}
+
+.title-bar{
+    position: sticky;
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    position: relative;
+    padding-top: var(--xsmall-gap)
+}
+
+.navigate-hitbox{
+    height: var(--xlarge-icon);
+    background-color: purple;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    position: absolute;
+    margin-left: var(--xsmall-gap);
+
+}
+
+.title-text-container{
+    max-width: 60%;
+    margin-top: var(--xsmall-gap);
+    line-height: var(--xlarge-icon);
+    margin: auto;
+    background-color: red;
+    display: grid;
+}
+
+.title-text{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-me-bar{
+    height: 30vh;
+    background-color: red;
+    width: 100%;
+}
+
+.experience-bar{
+    height: 30vh;
+    background-color: purple;
+    width: 100%;
+}
+

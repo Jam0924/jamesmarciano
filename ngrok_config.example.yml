@@ -4,6 +4,6 @@ on_http_request:
         config:
           provider: google
   - expressions:
-      - "actions.ngrok.oauth.identity.email != 'exampleemail@gmail.com'"
+      - "actions.ngrok.oauth.identity.email != 'example_email@gmail.com'"
     actions:
       - type: deny
