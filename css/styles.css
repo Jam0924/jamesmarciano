@@ -16,7 +16,7 @@ html, body, head, p{
 
 
 .website-container{
-    width: 100vw;
+    width: 100%;
     background-color:orange;
     display: grid;
     grid-template-areas:
@@ -28,16 +28,9 @@ html, body, head, p{
     "contacts-bar"
     "timeline-bar"; /* might be exempt */
     row-gap: var(--medium-gap);
-}
-
-.title-bar{
-    position: sticky;
-    background-color: pink;
-    width: 100%;
-    display: flex;
-    padding: 0;
-    position: relative;
-    padding-top: var(--xsmall-gap)
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* scrollbar-gutter: stable; */
 }
 
 .navigate-hitbox{
@@ -45,7 +38,8 @@ html, body, head, p{
     background-color: purple;
     aspect-ratio: 1/1;
     position: fixed;
-    margin-left: var(--xsmall-gap);
+    z-index: 99;
+    margin: var(--xsmall-gap) 0 0 var(--xsmall-gap);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -53,18 +47,24 @@ html, body, head, p{
 
 .navigate-button{
     background-color :orangered;
-    position: sticky;
     height: var(--large-icon);
     aspect-ratio: 1/1;
+}
+
+.title-bar{
+    background-color: pink;
+    width: 100%;
+    grid-area: title-bar;
+    display: flex;
 }
 
 .title-text-container{
     max-width: 60%;
     margin-top: var(--xsmall-gap);
     line-height: var(--xlarge-icon);
-    margin: auto;
     background-color: red;
     display: grid;
+    margin: auto;
 }
 
 .title-text{
