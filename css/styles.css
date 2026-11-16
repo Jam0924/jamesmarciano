@@ -309,10 +309,56 @@ html, body, head, p{
     grid-area: description;
 }
 
+
+
+
 .skills-section{
     grid-area: skills-bar;
     width: 100%;
     background-color: gray;
+}
+
+.skills-section-title{
+    font-size: var(--title-text);
+}
+
+.skills-list-section{
+    width: 100%;
+    padding: var(--small-gap);
+    display: grid;
+    background-color: lightpink;
+    grid-template-areas: 
+    "skill1 skill2"
+    "skill3 skill4"
+    "skill5 skill5"; /* Standard format, needs to use JS */
+    column-gap: var(--small-gap);
+    row-gap: var(--small-gap);
+    box-sizing: border-box;
+}
+
+.skill{
+    background-color: green;
+    height: 160px;
+    aspect-ratio: 1/1;
+    align-self: center;
+    justify-self: center;
+}
+
+.skill1{
+    grid-area: skill1;
+}
+.skill2{
+    grid-area: skill2;
+}
+.skill3{
+    grid-area: skill3;
+}
+.skill4{
+    grid-area: skill4;
+}
+/* One row skill */
+.skill5{
+    grid-area: skill5;
 }
 
 .timeline-section{
