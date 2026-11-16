@@ -7,6 +7,11 @@
     --xsmall-gap: 8px;
     --small-gap: 16px;
     --medium-gap: 32px;
+
+    --medium-border-size: 4px;
+
+    --title-text: 1.7rem;
+    --body-text: 1.2rem;
 }
 
 html, body, head, p{
@@ -29,7 +34,6 @@ html, body, head, p{
     row-gap: var(--medium-gap);
     overflow-x: hidden;
     overflow-y: auto;
-    /* scrollbar-gutter: stable; */
 }
 
 .navigate-hitbox{
@@ -88,7 +92,7 @@ html, body, head, p{
     height: 216px;
     width: 216px;
     border-radius: 50%;
-    border: 4px solid white;
+    border: var(--medium-border-size) solid white;
     overflow: hidden;
     background-color :black;
     z-index: 1;
@@ -125,9 +129,26 @@ html, body, head, p{
 
 .about-me{
     grid-area: about-me;
-    height: 100px;
     width: 100%;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--small-gap);
+    border-top: var(--medium-border-size) solid white;
+    border-bottom: var(--medium-border-size) solid white;
+    padding: var(--small-gap) 0;
+}
+
+.about-me-title-text{
+    background-color :yellow;
+    font-size: var(--title-text);
+    align-self: center;
+    justify-self: center;
+}
+
+.about-me-body-text{
+    background-color :green;
+    font-size: var(--body-text)
 }
 
 .experience-bar{
