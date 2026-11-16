@@ -233,6 +233,7 @@ html, body, head, p{
 
 .experience-section-title{
     background-color: yellow;
+    padding: 0 var(--small-gap);
     font-size: var(--title-text);
 }
 
@@ -277,6 +278,7 @@ html, body, head, p{
 
 .projects-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .project{
@@ -321,6 +323,7 @@ html, body, head, p{
 
 .skills-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .skills-list-section{
@@ -377,7 +380,6 @@ html, body, head, p{
 }
 
 
-
 .timeline-section{
     grid-area: timeline-bar;
     width: 100%;
@@ -386,6 +388,7 @@ html, body, head, p{
 
 .timeline-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .timeline-bubbles{
@@ -414,6 +417,7 @@ html, body, head, p{
 .contacts-section-title{
     width: 100%;
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .contact{
