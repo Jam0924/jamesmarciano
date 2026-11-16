@@ -7,11 +7,14 @@
     --xsmall-gap: 8px;
     --small-gap: 16px;
     --medium-gap: 32px;
+    --large-gap: 48px;
 
     --medium-border-size: 4px;
 
     --title-text: 1.7rem;
-    --body-text: 1.2rem;
+    --subtitle-text: 1.4rem;
+    --body-text: 1.1rem;
+    --sub-text: 1rem;
 }
 
 html, body, head, p{
@@ -151,9 +154,47 @@ html, body, head, p{
     font-size: var(--body-text)
 }
 
-.experience-bar{
-    height: 30vh;
+.tray-element{
+    padding: var(--small-gap) var(--large-gap);
     background-color: purple;
     width: 100%;
+    box-sizing: border-box;
 }
+
+.experience {
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "location"
+    "description"
+    "tray";
+}
+
+.experience-title{
+    font-size: var(--subtitle-text);
+    padding: var(--xsmall-gap);
+    grid-area: title;
+}
+
+.experience-location{
+    font-size: var(--sub-text);
+    padding: 0px var(--xsmall-gap);
+    grid-area: location;
+}
+
+.experience-description{
+    padding: var(--xsmall-gap);
+    font-size: var(--body-text);
+    grid-area: description;
+}
+
+.tag-tray{
+    background-color: red;
+    height: var(--large-icon);
+    grid-area: tray;
+}
+
+
 
