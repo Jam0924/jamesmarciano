@@ -32,8 +32,8 @@ html, body, head, p{
     "experience-bar"
     "projects-bar"
     "skills-bar"
-    "contacts-bar"
-    "timeline-bar"; /* might be exempt */
+    "timeline-bar" /* might be exempt */
+    "contacts-bar";
     row-gap: var(--medium-gap);
     grid-auto-rows: auto;
     overflow-x: hidden;
@@ -58,7 +58,7 @@ html, body, head, p{
     aspect-ratio: 1/1;
 }
 
-.title-bar{
+.title-section{
     background-color: pink;
     width: 100%;
     grid-area: title-bar;
@@ -152,6 +152,8 @@ html, body, head, p{
     font-size: var(--body-text)
 }
 
+
+
 .tray-element{
     background-color: purple;
     width: 100%;
@@ -179,46 +181,6 @@ html, body, head, p{
 
 .right{
     right: 0;
-}
-
-.experience-section{
-    grid-area: experience-bar;
-    width: 100%;
-    background-color: lightblue;
-}
-
-.experience-section-title{
-    background-color: yellow;
-}
-
-.experience {
-    margin: var(--small-gap) var(--large-gap);
-    width: 100%;
-    background-color: pink;
-    display: grid;
-    grid-template-areas: 
-    "title"
-    "location"
-    "description"
-    "tray";
-}
-
-.experience-title{
-    font-size: var(--subtitle-text);
-    padding: var(--xsmall-gap);
-    grid-area: title;
-}
-
-.experience-location{
-    font-size: var(--sub-text);
-    padding: 0px var(--xsmall-gap);
-    grid-area: location;
-}
-
-.experience-description{
-    padding: var(--xsmall-gap);
-    font-size: var(--body-text);
-    grid-area: description;
 }
 
 .tags-area{
@@ -261,4 +223,107 @@ html, body, head, p{
     justify-self: end;
 }
 
+
+.experience-section{
+    grid-area: experience-bar;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.experience-section-title{
+    background-color: yellow;
+    font-size: var(--title-text);
+}
+
+.experience {
+    margin: var(--small-gap) var(--large-gap);
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "location"
+    "description"
+    "tray";
+}
+
+.experience-title{
+    font-size: var(--subtitle-text);
+    padding: var(--xsmall-gap);
+    grid-area: title;
+}
+
+.experience-location{
+    font-size: var(--sub-text);
+    padding: 0px var(--xsmall-gap);
+    grid-area: location;
+}
+
+.experience-description{
+    padding: var(--xsmall-gap);
+    font-size: var(--body-text);
+    grid-area: description;
+}
+
+
+
+
+.projects-section{
+    grid-area: projects-bar;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.projects-section-title{
+    font-size: var(--title-text);
+}
+
+.project{
+    margin: var(--small-gap) var(--large-gap);
+    width: 100%;
+    background-color: pink;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "project-image"
+    "description"
+    "tray";
+}
+
+.project-title{
+    grid-area: title;
+    padding: var(--xsmall-gap);
+    font-size: var(--subtitle-text);
+}
+
+.project-image{
+    margin: var(--small-gap);
+    height: 200px;
+    background-color: black;
+    grid-area: project-image;
+}
+
+.project-description{
+    padding: var(--xsmall-gap);
+    font-size: var(--body-text);
+    grid-area: description;
+}
+
+.skills-section{
+    grid-area: skills-bar;
+    width: 100%;
+    background-color: gray;
+}
+
+.timeline-section{
+    grid-area: timeline-bar;
+    width: 100%;
+    background-color: pink;
+}
+
+.contacts-section{
+    grid-area: contacts-bar;
+    width: 100%;
+    background-color: blue;
+}
 
