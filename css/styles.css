@@ -29,12 +29,13 @@ html, body, head, p{
     grid-template-areas:
     "title-bar"
     "about-me-bar"
-    "expereience-bar"
+    "experience-bar"
     "projects-bar"
     "skills-bar"
     "contacts-bar"
     "timeline-bar"; /* might be exempt */
     row-gap: var(--medium-gap);
+    grid-auto-rows: auto;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -78,7 +79,7 @@ html, body, head, p{
     text-align: center;
 }
 
-.about-me-bar{
+.about-me-section{
     background-color: red;
     width: 100%;
     display: grid;
@@ -107,9 +108,6 @@ html, body, head, p{
     display: block;
     object-fit: cover;
 }
-
-
-
 
 .headshot-decorator{
     grid-area: headshot;
@@ -183,6 +181,15 @@ html, body, head, p{
     right: 0;
 }
 
+.experience-section{
+    grid-area: experience-bar;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.experience-section-title{
+    background-color: yellow;
+}
 
 .experience {
     margin: var(--small-gap) var(--large-gap);
