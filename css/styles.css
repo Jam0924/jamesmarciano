@@ -1,6 +1,6 @@
 
 :root{
-    --medium-icon: 24px;
+    --medium-icon: 40px;
     --large-icon: 48px;
     --xlarge-icon: 64px;
 
@@ -155,13 +155,37 @@ html, body, head, p{
 }
 
 .tray-element{
-    padding: var(--small-gap) var(--large-gap);
     background-color: purple;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    display: flex;
 }
 
+.tray-element-button-hitbox{
+    height: var(--large-icon);
+    width: var(--large-icon);
+    background-color: orange;
+    position: absolute;
+    align-self: center;
+    display: grid;
+}
+
+.tray-element-button{
+    height: var(--medium-icon);
+    width: var(--medium-icon);
+    background-color: green;
+    align-self: center;
+    justify-self: center;
+}
+
+.right{
+    right: 0;
+}
+
+
 .experience {
+    margin: var(--small-gap) var(--large-gap);
     width: 100%;
     background-color: pink;
     display: grid;
@@ -190,11 +214,44 @@ html, body, head, p{
     grid-area: description;
 }
 
-.tag-tray{
+.tags-area{
     background-color: red;
     height: var(--large-icon);
     grid-area: tray;
+    display: grid;
+    align-items: center;
+    grid-template-areas:"tags explore-more-tag";
+    padding: 0 var(--xsmall-gap);
 }
 
+.tags-tray{
+    grid-area: tags;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.tag{
+    width: fit-content;
+    background-color: yellow;
+    display :flex;
+    align-items: center;
+    padding: var(--xsmall-gap);
+    margin: 0 var(--xsmall-gap);
+    border-radius: 10px;
+}
+
+.tag-text{
+    font-size: var(--sub-text);
+    white-space: nowrap;
+}
+
+.explore-more-tag{
+    grid-area: explore-more-tag;
+    width: var(--medium-icon);
+    height: var(--medium-icon);
+    background-color: orange;
+    justify-self: end;
+}
 
 
