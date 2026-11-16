@@ -12,7 +12,7 @@
     --medium-border-size: 4px;
 
     --title-text: 1.7rem;
-    --subtitle-text: 1.4rem;
+    --subtitle-text: 1.3rem;
     --body-text: 1.1rem;
     --sub-text: 1rem;
 }
@@ -149,7 +149,8 @@ html, body, head, p{
 
 .about-me-body-text{
     background-color :green;
-    font-size: var(--body-text)
+    font-size: var(--body-text);
+    padding: 0 var(--small-gap);
 }
 
 
@@ -342,6 +343,20 @@ html, body, head, p{
     aspect-ratio: 1/1;
     align-self: center;
     justify-self: center;
+    display: grid;
+}
+
+.skill-image{
+    height: 112px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    justify-self: center;
+    margin-top: var(--xsmall-gap);
+}
+
+.skill-text{
+    justify-self: center;
+    font-size: var(--subtitle-text);
 }
 
 .skill1{
@@ -361,15 +376,63 @@ html, body, head, p{
     grid-area: skill5;
 }
 
+
+
 .timeline-section{
     grid-area: timeline-bar;
     width: 100%;
     background-color: pink;
 }
 
+.timeline-section-title{
+    font-size: var(--title-text);
+}
+
+.timeline-bubbles{
+    background-color: gray;
+    height: 64px;
+}
+
+.timeline-image{
+    height: 200px;
+    margin: var(--medium-gap);
+    background-color: purple;
+}
+
+.timeline-description{
+    background-color: green;
+    margin: var(--small-gap);
+
+}
+
 .contacts-section{
     grid-area: contacts-bar;
     width: 100%;
     background-color: blue;
+}
+
+.contacts-section-title{
+    width: 100%;
+    font-size: var(--title-text);
+}
+
+.contact{
+    width: 100%;
+    background-color: grey;
+    padding: var(--small-gap);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--small-gap);
+}
+
+.contact-image{
+    height: var(--medium-icon);
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+
+.contact-text{
+    font-size: var(--subtitle-text);
 }
 
