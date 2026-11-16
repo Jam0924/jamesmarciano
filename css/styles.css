@@ -14,7 +14,6 @@ html, body, head, p{
     padding: 0px;
 }
 
-
 .website-container{
     width: 100%;
     background-color:orange;
@@ -73,9 +72,62 @@ html, body, head, p{
 }
 
 .about-me-bar{
-    height: 30vh;
     background-color: red;
     width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "headshot"
+    "about-me";
+    row-gap: var(--small-gap)
+}
+
+.headshot-container{
+    grid-area: headshot;
+    justify-self: center;
+    align-self: center;
+    height: 216px;
+    width: 216px;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    background-color :black;
+    z-index: 1;
+}
+
+.headshot-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+
+.headshot-decorator{
+    grid-area: headshot;
+    height: 85%;
+    width: 16px;
+    background-color: white;
+    z-index: 0;
+    align-self: center;
+    justify-self: center;
+    display: block;
+}
+
+.offset-one{
+    transform: translate(0px, 10px) skew(45deg);
+}
+
+.offset-two{
+    transform: translate(10px, -10px) skew(45deg);
+}
+
+.about-me{
+    grid-area: about-me;
+    height: 100px;
+    width: 100%;
+    background-color: blue;
 }
 
 .experience-bar{
