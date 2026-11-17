@@ -154,21 +154,38 @@ html, body, head, p{
 }
 
 
-
 .tray-element{
     background-color: purple;
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    display: grid;
+    grid-template-columns: var(--large-icon) 1fr var(--large-icon);
+    overflow-x: auto;
+}
+
+.tray-object{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 0 var(--large-gap);
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    min-width: 0;
     display: flex;
+    gap: var(--small-gap);
 }
 
 .tray-element-button-hitbox{
-    height: var(--large-icon);
+    grid-row: 1;
+    grid-column: 1;
+    height: 100%;
     width: var(--large-icon);
-    background-color: orange;
-    position: absolute;
-    align-self: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+    align-self: stretch;
     display: grid;
 }
 
@@ -181,7 +198,7 @@ html, body, head, p{
 }
 
 .right{
-    right: 0;
+    grid-column: 3;
 }
 
 .tags-area{
@@ -233,19 +250,52 @@ html, body, head, p{
 
 .experience-section-title{
     background-color: yellow;
+    padding: 0 var(--small-gap);
     font-size: var(--title-text);
 }
 
 .experience {
-    margin: var(--small-gap) var(--large-gap);
     width: 100%;
+    flex-shrink: 0;
+    min-width: 0;
     background-color: pink;
     display: grid;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-    "title"
-    "location"
+    "general"
     "description"
     "tray";
+    position: relative;
+    clip-path: polygon(
+                        0 0, 
+                        calc(100% - var(--medium-icon)) 0, 
+                        100% var(--medium-icon), 
+                        100% 100%, 
+                        0 100%
+                        );
+}
+
+.experience::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--medium-icon);
+    height: var(--medium-icon);
+
+    background: rgba(0, 0, 0, 0.2); 
+    border-bottom-left-radius: 4px; 
+}
+
+.experience-general-info{
+    width: 100%;
+    grid-area: general;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "title image"
+    "location image"
+    "date image";
 }
 
 .experience-title{
@@ -255,9 +305,25 @@ html, body, head, p{
 }
 
 .experience-location{
-    font-size: var(--sub-text);
     padding: 0px var(--xsmall-gap);
     grid-area: location;
+}
+
+.experience-date{
+    padding: 0px var(--xsmall-gap);
+    grid-area: date;
+}
+.experience-location-text, .experience-date-text{
+    font-size: var(--sub-text);
+}
+
+.experience-location-logo{
+    height: var(--medium-icon);
+    width: var(--medium-icon);
+    background-color: black;
+    grid-area: image;
+    align-self: start;
+    margin: 0 0 0 var(--small-gap);
 }
 
 .experience-description{
@@ -277,10 +343,10 @@ html, body, head, p{
 
 .projects-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .project{
-    margin: var(--small-gap) var(--large-gap);
     width: 100%;
     background-color: pink;
     display: grid;
@@ -321,6 +387,7 @@ html, body, head, p{
 
 .skills-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .skills-list-section{
@@ -377,7 +444,6 @@ html, body, head, p{
 }
 
 
-
 .timeline-section{
     grid-area: timeline-bar;
     width: 100%;
@@ -386,6 +452,7 @@ html, body, head, p{
 
 .timeline-section-title{
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .timeline-bubbles{
@@ -414,6 +481,7 @@ html, body, head, p{
 .contacts-section-title{
     width: 100%;
     font-size: var(--title-text);
+    padding: 0 var(--small-gap);
 }
 
 .contact{

@@ -7,7 +7,8 @@
     <meta name="description" content="A personal portfolio website designed to show my software engineering experience.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <script src="script.js" defer></script> -->
+    <script src = "scripts/experience_tray_element.js" defer></script>
+    <script src = "scripts/populate_experiences.js" defer></script>
   </head>
   <body>
     <div class = "navigate-hitbox">
@@ -55,63 +56,16 @@
             </div>
 
             <div class = "tray-element">
-
-                <div class = "tray-element-button-hitbox">
+                <div class = "tray-element-button-hitbox" id = "left-button">
                     <div class = "tray-element-button">
-
                     </div>
                 </div>
 
-                <div class = "tray-element-button-hitbox right">
-                    <div class = "tray-element-button">
-
-                    </div>
+                <div class = "tray-object" id = "experience-tray-object">
                 </div>
 
-
-                <!-- I wonder if a javascript algorithm could be used to measure the height of the longest one and make that the height of all of them.-->
-                <div class = "experience">
-                    <div class = "experience-title">
-                        <p>
-                            Placeholder Title
-                        </p>
-                    </div>
-                    <div class = "experience-location">
-                        <div class = "experience-location-logo">
-                            <!-- <img> -->
-                        </div>
-                        <div class = "experience-location-description">
-                            <p class = experience-location-description-text>
-                                Placeholder, NJ
-                            </p>
-                        </div>
-                    </div>
-                    <div class = "experience-description">
-                        <p class = experience-description-text>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p> 
-                    </div>
-                    <div class = "tags-area">
-                        <div class = "tags-tray">
-                            <div class = "tag">
-                                <p class = tag-text>
-                                    Community Service
-                                </p>
-                            </div>
-
-                            <div class = "tag">
-                                <p class = tag-text>
-                                    Community Service
-                                </p>
-                            </div>
-                        </div>
-                        <div class = "explore-more-tag">
-
-                        </div>
-
-
+                <div class = "tray-element-button-hitbox right" id = "right-button">
+                    <div class = "tray-element-button">
                     </div>
                 </div>
             </div>
@@ -137,40 +91,41 @@
 
                     </div>
                 </div>
-                
-                <div class = "project">
+                <div class = "tray-object">
+                    <div class = "project">
 
-                    <div class = "project-title">
-                        <p> Example Project Title</p>
-                    </div>
-                    
-                    <div class = "project-image">
-                        
-                    </div>
-
-                    <div class = "project-description">
-                        <p class = "project-description-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-
-                    <div class = "tags-area">
-                        <div class = "tags-tray">
-                            <div class = "tag">
-                                <p class = tag-text>
-                                    C++
-                                </p>
-                            </div>
-
-                            <div class = "tag">
-                                <p class = tag-text>
-                                    frontend
-                                </p>
-                            </div>
+                        <div class = "project-title">
+                            <p> Example Project Title</p>
                         </div>
-                        <div class = "explore-more-tag">
+                        
+                        <div class = "project-image">
+                            
+                        </div>
 
+                        <div class = "project-description">
+                            <p class = "project-description-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+
+                        <div class = "tags-area">
+                            <div class = "tags-tray">
+                                <div class = "tag">
+                                    <p class = tag-text>
+                                        C++
+                                    </p>
+                                </div>
+
+                                <div class = "tag">
+                                    <p class = tag-text>
+                                        frontend
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "explore-more-tag">
+
+                            </div>
                         </div>
                     </div>
                 </div>
