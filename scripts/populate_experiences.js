@@ -1,21 +1,7 @@
 let experiences = 0;
 
-async function load_json(){
-    try{
-        const response = await fetch("../website_information/experiences.json");
-        if(!response.ok){
-            throw new Error(`HTTP Error! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        return data;
-    }
-    catch(error){
-        alert("Local file could not be found", error);
-    }
-}
-
 async function load_experiences(){
-    const data = await load_json();
+    const data = await load_json("experiences");
     const tray = document.getElementById("experience-tray-object");
     data.forEach( ({title, location, date, imageName, briefDesc, tags}) => {
         const experience_card = document.createElement("div");

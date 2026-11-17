@@ -1,0 +1,25 @@
+[
+    {
+        "decorativeText": "myproject.txt",
+        "title": "Example Project Title",
+        "imageName": "none",
+        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": ["C++", "Frontend"]
+    },
+
+    {
+        "decorativeText": "myproject2myproject1.txt",
+        "title": "Example Project Title 2",
+        "imageName": "none",
+        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": ["HTML/CSS/Javascript", "C++", "Frontend"]
+    },
+
+    {
+        "decorativeText": "mine2.txt",
+        "title": "Example Project Title 3",
+        "imageName": "none",
+        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": ["C++", "Frontend", "Backend"]
+    }
+]

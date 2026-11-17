@@ -7,8 +7,10 @@
     <meta name="description" content="A personal portfolio website designed to show my software engineering experience.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <script src = "scripts/load_json.js" defer> </script>
     <script src = "scripts/experience_tray_element.js" defer></script>
     <script src = "scripts/populate_experiences.js" defer></script>
+    <script src = "scripts/populate_projects.js" defer></script>
   </head>
   <body>
     <div class = "navigate-hitbox">
@@ -56,7 +58,7 @@
             </div>
 
             <div class = "tray-element">
-                <div class = "tray-element-button-hitbox" id = "left-button">
+                <div class = "tray-element-button-hitbox" id = "experience-left-button">
                     <div class = "tray-element-button">
                     </div>
                 </div>
@@ -64,7 +66,7 @@
                 <div class = "tray-object" id = "experience-tray-object">
                 </div>
 
-                <div class = "tray-element-button-hitbox right" id = "right-button">
+                <div class = "tray-element-button-hitbox right" id = "experience-right-button">
                     <div class = "tray-element-button">
                     </div>
                 </div>
@@ -80,53 +82,18 @@
 
             <div class = "tray-element">
 
-                <div class = "tray-element-button-hitbox">
+                <div class = "tray-element-button-hitbox" id = "project-left-button">
                     <div class = "tray-element-button">
 
                     </div>
                 </div>
 
-                <div class = "tray-element-button-hitbox right">
+                <div class = "tray-object" id = "projects-tray-object">
+                </div>
+
+                <div class = "tray-element-button-hitbox right" id = "project-right-button">
                     <div class = "tray-element-button">
 
-                    </div>
-                </div>
-                <div class = "tray-object">
-                    <div class = "project">
-
-                        <div class = "project-title">
-                            <p> Example Project Title</p>
-                        </div>
-                        
-                        <div class = "project-image">
-                            
-                        </div>
-
-                        <div class = "project-description">
-                            <p class = "project-description-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-
-                        <div class = "tags-area">
-                            <div class = "tags-tray">
-                                <div class = "tag">
-                                    <p class = tag-text>
-                                        C++
-                                    </p>
-                                </div>
-
-                                <div class = "tag">
-                                    <p class = tag-text>
-                                        frontend
-                                    </p>
-                                </div>
-                            </div>
-                            <div class = "explore-more-tag">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

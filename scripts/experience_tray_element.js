@@ -1,11 +1,10 @@
 function initalize_tray(experiences){
-    const left_button = document.getElementById("left-button");
-    const right_button = document.getElementById("right-button");
+    const left_button = document.getElementById("experience-left-button");
+    const right_button = document.getElementById("experience-right-button");
     const tray_content = document.getElementById("experience-tray-object");
 
     let small_gap = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--small-gap").trim());
     let element_size = document.querySelector(".experience").offsetWidth + small_gap;
-    let index = 0;
     let UPPER_BOUND = 99999;
 
     if(experiences - 1 < UPPER_BOUND){

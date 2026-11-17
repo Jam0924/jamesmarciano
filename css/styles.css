@@ -355,18 +355,29 @@ html, body, head, p{
 .project{
     width: 100%;
     background-color: pink;
+    flex-shrink: 0;
+    min-width: 0;
     display: grid;
     grid-template-areas: 
+    "decorative-title"
     "title"
     "project-image"
     "description"
     "tray";
+    clip-path: path("M 0 0 L 100 0 L 100 16 L 700 16 L 700 700 L 0 700 Z");
 }
 
 .project-title{
     grid-area: title;
     padding: var(--xsmall-gap);
     font-size: var(--subtitle-text);
+}
+
+.decorative-project-title{
+    grid-area: decorative-title;
+    width: max-content;
+    padding: var(--xsmall-gap);
+    font-size: var(--sub-text);
 }
 
 .project-image{
