@@ -21,5 +21,21 @@
         "imageName": "none",
         "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "tags": ["C++", "Frontend", "Backend"]
+    },
+
+    {
+        "decorativeText": "mine2.txt",
+        "title": "Example Project Title 3",
+        "imageName": "none",
+        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": ["C++", "Frontend", "Backend"]
+    },
+
+    {
+        "decorativeText": "mine2.txt",
+        "title": "Example Project Title 3",
+        "imageName": "none",
+        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "tags": ["C++", "Frontend", "Backend"]
     }
 ]

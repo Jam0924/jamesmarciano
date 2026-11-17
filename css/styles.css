@@ -179,7 +179,7 @@ html, body, head, p{
 .tray-object{
     grid-column: 1 / -1;
     grid-row: 1;
-    padding: 0 var(--large-gap);
+    padding: 0 var(--large-gap); /* used to be padding */
     box-sizing: border-box;
     width: 100%;
     overflow-x: auto;
@@ -232,6 +232,7 @@ html, body, head, p{
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .tag{
@@ -366,7 +367,6 @@ html, body, head, p{
     width: 100%;
     background-color: pink;
     flex-shrink: 0;
-    min-width: 0;
     display: grid;
     grid-template-areas: 
     "decorative-title"
@@ -374,7 +374,6 @@ html, body, head, p{
     "project-image"
     "description"
     "tray";
-    clip-path: path("M 0 0 L 100 0 L 100 16 L 700 16 L 700 700 L 0 700 Z");
 
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -517,9 +516,31 @@ html, body, head, p{
     font-size: var(--subtitle-text);
 }
 
+@media (min-width: 768px){
+    .headshot-container{
+        height: 280px;
+        width: 280px;
+    }
 
 
-@media( min-width: 768px){
+    .experience{
+        max-width: calc(50% - var(--small-gap));
+    }
+
+    .project{
+        max-width: calc(50% - var(--small-gap));
+    }
+
+    .skills-list-section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .skill:last-child:nth-child(odd){
+        grid-column: unset;
+    }       
+}
+
+@media( min-width: 950px){
     .about-me-section{
         grid-template-areas: "headshot about-me";
         grid-template-columns: 4fr 6fr;
@@ -550,7 +571,6 @@ html, body, head, p{
         width: 280px;
     }
 
-
     .experience{
         max-width: calc(33.333% - var(--small-gap));
     }
@@ -560,11 +580,23 @@ html, body, head, p{
     }
 
     .skills-list-section{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     .skill:last-child:nth-child(odd){
         grid-column: unset;
     }       
+}
 
+@media(min-width: 1400px){
+    .skills-list-section{
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .experience{
+        max-width: calc(20% - var(--small-gap));
+    }
+
+    .project{
+        max-width: calc(20% - var(--small-gap));
+    }
 }
