@@ -159,14 +159,28 @@ html, body, head, p{
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: var(--large-icon) 1fr var(--large-icon);
+    grid-template-areas: "left-button tray right-button";
     overflow-x: auto;
 }
 
+.tray-object{
+    grid-column: 1 / -1;
+    padding: 0 var(--large-gap);
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: auto;
+    min-width: 0;
+    display: flex;
+    gap: var(--small-gap);
+}
+
 .tray-element-button-hitbox{
-    height: var(--large-icon);
+    grid-area: left-button;
+    height: 100%;
     width: var(--large-icon);
-    background-color: orange;
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     align-self: center;
     display: grid;
@@ -181,6 +195,7 @@ html, body, head, p{
 }
 
 .right{
+    grid-area: right-button;
     right: 0;
 }
 
@@ -238,7 +253,6 @@ html, body, head, p{
 }
 
 .experience {
-    margin: var(--small-gap) var(--large-gap);
     width: 100%;
     flex-shrink: 0;
     min-width: 0;
@@ -284,7 +298,6 @@ html, body, head, p{
 }
 
 .project{
-    margin: var(--small-gap) var(--large-gap);
     width: 100%;
     background-color: pink;
     display: grid;
