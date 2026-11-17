@@ -91,8 +91,15 @@ html, body, head, p{
     row-gap: var(--small-gap)
 }
 
-.headshot-container{
+.headshot-section{
     grid-area: headshot;
+    display: grid;
+    background-color: pink;
+}
+
+.headshot-container{
+    grid-row: 1;
+    grid-column: 1;
     justify-self: center;
     align-self: center;
     height: 216px;
@@ -112,7 +119,8 @@ html, body, head, p{
 }
 
 .headshot-decorator{
-    grid-area: headshot;
+    grid-row: 1;
+    grid-column: 1;
     height: 85%;
     width: 16px;
     background-color: white;
@@ -134,12 +142,14 @@ html, body, head, p{
     grid-area: about-me;
     width: 100%;
     background-color: blue;
+    position: relative;
+    padding: var(--small-gap) 0;
+}
+
+.about-me-information{
     display: flex;
     flex-direction: column;
     row-gap: var(--small-gap);
-    border-top: var(--medium-border-size) solid white;
-    border-bottom: var(--medium-border-size) solid white;
-    padding: var(--small-gap) 0;
 }
 
 .about-me-title-text{
@@ -396,9 +406,6 @@ html, body, head, p{
     grid-area: description;
 }
 
-
-
-
 .skills-section{
     grid-area: skills-bar;
     width: 100%;
@@ -510,3 +517,54 @@ html, body, head, p{
     font-size: var(--subtitle-text);
 }
 
+
+
+@media( min-width: 768px){
+    .about-me-section{
+        grid-template-areas: "headshot about-me";
+        grid-template-columns: 4fr 6fr;
+    }
+
+    .about-me::before{
+        content: ""; /* Mandatory for pseudo-elements to render */
+        position: absolute;
+        top: 0; 
+        bottom: 0; 
+        left: 0px; 
+        right: -20px;
+        
+        border: 4px solid white;
+        transform: skewX(-20deg); 
+        transform-origin: bottom left;
+        
+        z-index: 1;
+    }
+
+    .about-me-information{
+        width: 80%;
+        margin-left: auto;
+    }
+    
+    .headshot-container{
+        height: 280px;
+        width: 280px;
+    }
+
+
+    .experience{
+        max-width: calc(33.333% - var(--small-gap));
+    }
+
+    .project{
+        max-width: calc(33.333% - var(--small-gap));
+    }
+
+    .skills-list-section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .skill:last-child:nth-child(odd){
+        grid-column: unset;
+    }       
+
+}
