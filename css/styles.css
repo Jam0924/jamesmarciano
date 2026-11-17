@@ -170,10 +170,14 @@ html, body, head, p{
     padding: 0 var(--large-gap);
     box-sizing: border-box;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     min-width: 0;
     display: flex;
     gap: var(--small-gap);
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .tray-element-button-hitbox{
@@ -273,6 +277,8 @@ html, body, head, p{
                         100% 100%, 
                         0 100%
                         );
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .experience::after {
