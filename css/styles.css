@@ -32,7 +32,7 @@ html, body, head, p{
     "experience-bar"
     "projects-bar"
     "skills-bar"
-    "timeline-bar" /* might be exempt */
+    /* "timeline-bar"  Not to be added in this deployment*/
     "contacts-bar";
     row-gap: var(--medium-gap);
     grid-auto-rows: auto;
@@ -50,6 +50,8 @@ html, body, head, p{
     display: grid;
     justify-content: center;
     align-items: center;
+
+    display: none; /* Hidden, to be added in future deployments */
 }
 
 .navigate-button{
@@ -339,8 +341,6 @@ html, body, head, p{
 }
 
 
-
-
 .projects-section{
     grid-area: projects-bar;
     width: 100%;
@@ -365,6 +365,9 @@ html, body, head, p{
     "description"
     "tray";
     clip-path: path("M 0 0 L 100 0 L 100 16 L 700 16 L 700 700 L 0 700 Z");
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .project-title{
@@ -412,10 +415,7 @@ html, body, head, p{
     padding: var(--small-gap);
     display: grid;
     background-color: lightpink;
-    grid-template-areas: 
-    "skill1 skill2"
-    "skill3 skill4"
-    "skill5 skill5"; /* Standard format, needs to use JS */
+    grid-template-columns: 1fr 1fr;
     column-gap: var(--small-gap);
     row-gap: var(--small-gap);
     box-sizing: border-box;
@@ -428,6 +428,10 @@ html, body, head, p{
     align-self: center;
     justify-self: center;
     display: grid;
+}
+
+.skill:last-child:nth-child(odd){
+    grid-column: span 2;
 }
 
 .skill-image{
@@ -443,28 +447,13 @@ html, body, head, p{
     font-size: var(--subtitle-text);
 }
 
-.skill1{
-    grid-area: skill1;
-}
-.skill2{
-    grid-area: skill2;
-}
-.skill3{
-    grid-area: skill3;
-}
-.skill4{
-    grid-area: skill4;
-}
-/* One row skill */
-.skill5{
-    grid-area: skill5;
-}
-
 
 .timeline-section{
     grid-area: timeline-bar;
     width: 100%;
     background-color: pink;
+
+    display: none; /* Hidden, to be added in future deployments */
 }
 
 .timeline-section-title{

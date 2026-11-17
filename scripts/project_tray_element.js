@@ -1,14 +1,14 @@
-function initalize_projects_tray(experiences){
+function initalize_projects_tray(projects){
     const left_button = document.getElementById("project-left-button");
     const right_button = document.getElementById("project-right-button");
     const tray_content = document.getElementById("projects-tray-object");
 
     let small_gap = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--small-gap").trim());
-    let element_size = document.querySelector(".experience").offsetWidth + small_gap;
+    let element_size = document.querySelector(".project").offsetWidth + small_gap;
     let UPPER_BOUND = 99999;
 
-    if(experiences - 1 < UPPER_BOUND){
-        UPPER_BOUND = experiences - 1;
+    if(projects - 1 < UPPER_BOUND){
+        UPPER_BOUND = projects - 1;
     }
     else{
         // Add implementation here to only use the most recent experiences

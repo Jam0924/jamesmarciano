@@ -59,6 +59,8 @@ async function load_projects(){
 
         card.style.clipPath = `path('M 0 0 L ${text_width} 0 L ${text_width} ${text_height} L ${element_size} ${text_height} L ${element_size} ${element_height} L 0 ${element_height} Z')`;
     })
+
+    initalize_projects_tray(projects);
 }
 
 
