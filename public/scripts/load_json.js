@@ -1,6 +1,6 @@
 async function load_json(url){
     try{
-        const response = await fetch(`../website_information/${url}.json`);
+        const response = await fetch(`${import.meta.env.BASE_URL}website_information/${url}.json`);
         if(!response.ok){
             throw new Error(`HTTP Error! Status: ${response.status}`);
         }
