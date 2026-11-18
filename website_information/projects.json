@@ -1,17 +1,17 @@
 [
     {
-        "decorativeText": "myproject.txt",
-        "title": "Example Project Title",
+        "decorativeText": "conway.txt",
+        "title": "Conway's Game of Life",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "tags": ["C++", "Frontend"]
+        "briefDesc": "A website developed using HTML, CSS, and JavaScript on the frontend and a Python (Flask) backend to create a more customized version of famous Conway's Game of Life.",
+        "tags": ["HTML/CSS/Javascript", "Python"]
     },
 
     {
         "decorativeText": "myproject2myproject1.txt",
         "title": "Example Project Title 2",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "briefDesc": "Lorem ipsut aliquip ex ea commodo consequat.",
         "tags": ["HTML/CSS/Javascript", "C++", "Frontend"]
     },
 

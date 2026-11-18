@@ -227,8 +227,6 @@ html, body, head, p{
     position: relative;
     align-self: stretch;
     display: grid;
-    background-color:orange;
-    cursor: pointer;
 }
 
 .tray-element-button{
@@ -431,20 +429,14 @@ html, body, head, p{
 .project{
     width: 100%;
     flex-shrink: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     position: relative;
     isolation: isolate;
-    grid-template-areas: 
-    "decorative-title"
-    "title"
-    "project-image"
-    "description"
-    "tray";
 
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
-
 
 
 .project-title{
@@ -483,7 +475,14 @@ html, body, head, p{
     border-radius: 0 12px 12px 12px;
     position: relative;
     z-index: 1;
-    padding-bottom: var(--xsmall-gap);
+    flex: 1;
+    display: grid;
+    grid-template-areas:
+    "title"
+    "project-image"
+    "description"
+    "tray";
+    grid-template-rows: auto auto 1fr auto;
 }
 
 .project-image{
