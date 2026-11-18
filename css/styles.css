@@ -18,6 +18,16 @@
 
     --tray-elements-size: 100%;
     --skill-columns: 2;
+
+    --primary-color: #242526 ;
+    --secondary-color: #151919;
+
+    --dark-text: #424242;
+    --cream-text: #fef2e8;
+    --green-text: #8bc872;
+    --blue-text: #7ec0e3;
+
+    --text-color: #FEF2E8;
 }
 
 html, body, head, p{
@@ -27,7 +37,7 @@ html, body, head, p{
 
 .website-container{
     width: 100%;
-    background-color:orange;
+    background-color:var(--primary-color);
     display: grid;
     grid-template-areas:
     "title-bar"
@@ -64,17 +74,15 @@ html, body, head, p{
 }
 
 .title-section{
-    background-color: pink;
     width: 100%;
+    margin-top: var(--medium-gap);
     grid-area: title-bar;
     display: flex;
 }
 
 .title-text-container{
     max-width: 60%;
-    margin-top: var(--xsmall-gap);
     line-height: var(--xlarge-icon);
-    background-color: red;
     display: grid;
     margin: auto;
 }
@@ -82,10 +90,15 @@ html, body, head, p{
 .title-text{
     font-size: 3rem;
     text-align: center;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .about-me-section{
-    background-color: red;
+    background-color: var(--primary-color);
     width: 100%;
     display: grid;
     grid-template-areas: 
@@ -97,7 +110,6 @@ html, body, head, p{
 .headshot-section{
     grid-area: headshot;
     display: grid;
-    background-color: pink;
 }
 
 .headshot-container{
@@ -110,7 +122,6 @@ html, body, head, p{
     border-radius: 50%;
     border: var(--medium-border-size) solid white;
     overflow: hidden;
-    background-color :black;
     z-index: 1;
 }
 
@@ -144,9 +155,11 @@ html, body, head, p{
 .about-me{
     grid-area: about-me;
     width: 100%;
-    background-color: blue;
+    background-color: var(--secondary-color);
     position: relative;
     padding: var(--small-gap) 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
 }
 
 .about-me-information{
@@ -156,21 +169,31 @@ html, body, head, p{
 }
 
 .about-me-title-text{
-    background-color :yellow;
     font-size: var(--title-text);
     align-self: center;
+    color: var(--green-text);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     justify-self: center;
 }
 
 .about-me-body-text{
-    background-color :green;
     font-size: var(--body-text);
     padding: 0 var(--small-gap);
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
 .tray-element{
-    background-color: purple;
+    padding: var(--medium-gap) 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    background-color: var(--secondary-color);
     width: 100%;
     justify-self: center;
     box-sizing: border-box;
@@ -181,10 +204,8 @@ html, body, head, p{
 }
 
 .tray-object{
-    grid-column: 1 / -1;
+    grid-column: 2;
     grid-row: 1;
-    padding: 0 var(--large-gap);
-    scroll-padding: 0 calc(var(--large-gap));
     box-sizing: border-box;
     width: 100%;
     overflow-x: auto;
@@ -202,10 +223,8 @@ html, body, head, p{
     grid-column: 1;
     height: 100%;
     width: var(--large-icon);
-    background: rgba(255, 255, 255, 0.8);
     z-index: 10;
     position: relative;
-    cursor: pointer;
     align-self: stretch;
     display: grid;
 }
@@ -223,7 +242,7 @@ html, body, head, p{
 }
 
 .tags-area{
-    background-color: red;
+    background-color: var(--primary-color);
     height: var(--large-icon);
     grid-area: tray;
     display: grid;
@@ -242,7 +261,7 @@ html, body, head, p{
 
 .tag{
     width: fit-content;
-    background-color: yellow;
+    border: 1px solid white; /* make colorful*/
     display :flex;
     align-items: center;
     padding: var(--xsmall-gap);
@@ -253,6 +272,9 @@ html, body, head, p{
 .tag-text{
     font-size: var(--sub-text);
     white-space: nowrap;
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
 }
 
 .explore-more-tag{
@@ -267,12 +289,15 @@ html, body, head, p{
 .experience-section{
     grid-area: experience-bar;
     width: 100%;
-    background-color: lightblue;
 }
 
 .experience-section-title{
-    background-color: yellow;
-    padding: 0 var(--small-gap);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green-text);
+    padding: var(--small-gap);
     font-size: var(--title-text);
 }
 
@@ -281,7 +306,9 @@ html, body, head, p{
     flex-shrink: 0;
     min-width: 0;
     box-sizing: border-box;
-    background-color: pink;
+    background-color: var(--primary-color);
+    border: 2px solid white;
+    border-radius: 12px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
@@ -298,6 +325,7 @@ html, body, head, p{
                         );
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    padding-bottom: var(--xsmall-gap);
 
 }
 
@@ -305,13 +333,21 @@ html, body, head, p{
 .experience::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    /* 1. Pull the element outwards by the exact thickness of the parent's border */
+    top: -2px;
+    right: -2px;
+    
     width: var(--medium-icon);
     height: var(--medium-icon);
-
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(255, 255, 255, 0.1); 
     border-bottom-left-radius: 4px; 
+    
+    /* 2. Force the border to be included in the element's width/height math */
+    box-sizing: border-box;
+    
+    /* 3. ONLY draw the borders that form the inside edges of the folded flap */
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
 }
 
 .experience-general-info{
@@ -327,21 +363,31 @@ html, body, head, p{
 
 .experience-title{
     font-size: var(--subtitle-text);
-    padding: var(--xsmall-gap);
+    padding: var(--small-gap);
     grid-area: title;
+
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--blue-text);
 }
 
 .experience-location{
-    padding: 0px var(--xsmall-gap);
+    padding: 0px var(--small-gap);
     grid-area: location;
 }
 
 .experience-date{
-    padding: 0px var(--xsmall-gap);
+    padding: 0px var(--small-gap);
     grid-area: date;
 }
 .experience-location-text, .experience-date-text{
     font-size: var(--sub-text);
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .experience-location-logo{
@@ -354,28 +400,38 @@ html, body, head, p{
 }
 
 .experience-description{
-    padding: var(--xsmall-gap);
+    padding: var(--xsmall-gap) var(--small-gap);
     font-size: var(--body-text);
     grid-area: description;
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
 .projects-section{
     grid-area: projects-bar;
     width: 100%;
-    background-color: lightcoral;
+    background-color: var(--primary-color);
 }
 
 .projects-section-title{
     font-size: var(--title-text);
-    padding: 0 var(--small-gap);
+    padding: var(--small-gap);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green-text);
 }
 
 .project{
     width: 100%;
-    background-color: pink;
     flex-shrink: 0;
     display: grid;
+    position: relative;
+    isolation: isolate;
     grid-template-areas: 
     "decorative-title"
     "title"
@@ -387,17 +443,45 @@ html, body, head, p{
     scroll-snap-stop: always;
 }
 
+
+
 .project-title{
     grid-area: title;
-    padding: var(--xsmall-gap);
+    padding: var(--xsmall-gap) 0 0 var(--small-gap);
     font-size: var(--subtitle-text);
+
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--blue-text);
 }
 
 .decorative-project-title{
     grid-area: decorative-title;
-    width: max-content;
+    background-color: var(--primary-color);
     padding: var(--xsmall-gap);
+    width: max-content;
+    border: 2px solid white;
+    border-bottom: none;
+    z-index: 2;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: -2px;
     font-size: var(--sub-text);
+    color: var(--dark-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.project-body{
+    background-color: var(--primary-color);
+    border: 2px solid white;
+    padding-top: 2px;
+    border-radius: 0 12px 12px 12px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: var(--xsmall-gap);
 }
 
 .project-image{
@@ -408,27 +492,40 @@ html, body, head, p{
 }
 
 .project-description{
-    padding: var(--xsmall-gap);
+    padding: 0 var(--small-gap) var(--small-gap) var(--small-gap);
     font-size: var(--body-text);
     grid-area: description;
+
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .skills-section{
     grid-area: skills-bar;
     width: 100%;
-    background-color: gray;
+    background-color: var(--primary-color);
 }
 
 .skills-section-title{
     font-size: var(--title-text);
-    padding: 0 var(--small-gap);
+    padding: var(--small-gap);
+
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green-text);
 }
 
 .skills-list-section{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
     width: 100%;
     padding: var(--small-gap);
     display: grid;
-    background-color: lightpink;
+    background-color: var(--secondary-color);
     grid-template-columns: 1fr 1fr;
     column-gap: var(--small-gap);
     row-gap: var(--small-gap);
@@ -436,8 +533,10 @@ html, body, head, p{
 }
 
 .skill{
-    background-color: green;
+    background-color: var(--primary-color);
     height: 160px;
+    border: 2px solid white;
+    border-radius: 16px;
     aspect-ratio: 1/1;
     align-self: center;
     justify-self: center;
@@ -458,7 +557,12 @@ html, body, head, p{
 
 .skill-text{
     justify-self: center;
-    font-size: var(--subtitle-text);
+    font-size: var(--body-text);
+
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -495,18 +599,27 @@ html, body, head, p{
 .contacts-section{
     grid-area: contacts-bar;
     width: 100%;
-    background-color: blue;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items :center;
+    justify-content: center;
 }
 
 .contacts-section-title{
     width: 100%;
     font-size: var(--title-text);
-    padding: 0 var(--small-gap);
+    padding: var(--small-gap);
+
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--green-text);
 }
 
 .contact{
     width: 100%;
-    background-color: grey;
+    background-color: var(--primary-color);
     padding: var(--small-gap);
     display: flex;
     flex-direction: row;
@@ -522,6 +635,10 @@ html, body, head, p{
 
 .contact-text{
     font-size: var(--subtitle-text);
+    color: var(--cream-text);
+    font-family: "cora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 @media (min-width: 500px){
@@ -537,6 +654,15 @@ html, body, head, p{
     .headshot-container{
         height: 280px;
         width: 280px;
+    }
+
+    .tray-object{
+        margin: 0 var(--xsmall-gap);
+    }
+
+    .tray-element-button{
+        height: var(--large-icon);
+        width: var(--large-icon);
     }
 
 
@@ -558,9 +684,20 @@ html, body, head, p{
 }
 
 @media( min-width: 950px){
+
+    .about-me{
+        border-top: unset;
+        border-bottom: unset;
+        position: relative;
+        background-color: transparent;
+
+        z-index: 1;
+
+    }
     .about-me-section{
         grid-template-areas: "headshot about-me";
         grid-template-columns: 4fr 6fr;
+        
     }
 
     .about-me::before{
@@ -570,12 +707,13 @@ html, body, head, p{
         bottom: 0; 
         left: 0px; 
         right: -20px;
-        
         border: 4px solid white;
         transform: skewX(-20deg); 
         transform-origin: bottom left;
+
+        background-color: var(--secondary-color);
         
-        z-index: 1;
+        z-index: -1;
     }
 
     .about-me-information{
@@ -602,6 +740,11 @@ html, body, head, p{
     .skill:last-child:nth-child(odd){
         grid-column: unset;
     } 
+
+    .about-me-information{
+        width: 85%;
+        margin-left: auto;
+    }
 }
 
 @media (min-width: 1400px){
@@ -613,4 +756,9 @@ html, body, head, p{
     .skill:last-child:nth-child(odd){
         grid-column: unset;
     } 
+
+    .about-me-information{
+        width: 90%;
+        margin-left: auto;
+    }
 }
