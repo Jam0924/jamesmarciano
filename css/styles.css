@@ -715,7 +715,7 @@ html, body, head, p{
     }       
 }
 
-@media( min-width: 950px){
+@media( min-width: 1050px){
 
     .about-me{
         border-top: unset;
@@ -749,8 +749,14 @@ html, body, head, p{
     }
 
     .about-me-information{
-        width: 80%;
+        width: 70%;
         margin-left: auto;
+        text-align: right;
+        padding-right: var(--small-gap);
+    }
+
+    .headshot-decorator{
+        height: 50%;
     }
 
     .skills-list-section{
@@ -774,8 +780,12 @@ html, body, head, p{
     } 
 
     .about-me-information{
-        width: 85%;
+        width: 80%;
         margin-left: auto;
+    }
+
+    .headshot-decorator{
+        height: 70%;
     }
 }
 
@@ -790,7 +800,7 @@ html, body, head, p{
     } 
 
     .about-me-information{
-        width: 90%;
+        width: 85%;
         margin-left: auto;
     }
 }
