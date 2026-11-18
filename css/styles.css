@@ -227,6 +227,8 @@ html, body, head, p{
     position: relative;
     align-self: stretch;
     display: grid;
+    background-color:orange;
+    cursor: pointer;
 }
 
 .tray-element-button{

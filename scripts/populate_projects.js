@@ -43,6 +43,8 @@ async function load_projects(){
 
         tray.appendChild(project_card);
     });
+
+    initalize_projects_tray(projects);
 }
 
 
