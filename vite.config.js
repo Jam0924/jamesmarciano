@@ -6,6 +6,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    // Uses the repo name for GitHub Pages, but keeps '/' for local ngrok dev
+    base: mode === 'production' ? '/jamesmarciano/' : '/',
+    
     server: {
       allowedHosts: ['.ngrok-free.app', '.ngrok.app', env.VITE_NGROK_FORMATTED_HOST],
     },
