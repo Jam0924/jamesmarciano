@@ -29,13 +29,5 @@
         "imageName": "perl.png",
         "briefDesc": "Designed as part of a course project, I developed a lexical analyzer, parser, and interpreter for a simplified version of the Perl programming language. AST generation to mimic and interpret 18 EBNF rules.",
         "tags": ["C++", "Frontend", "Backend"]
-    },
-
-    {
-        "decorativeText": "LLM_improve.txt",
-        "title": "Code-Generation in LLMs",
-        "imageName": "ast.png",
-        "briefDesc": "A project developed as part of a paid research experience to improve large language models for code generation. My study focused on leveraging the systematic formatting of ASTs for Python code to efficiently generate code with less tokens.",
-        "tags": ["Python"]
     }
 ]
