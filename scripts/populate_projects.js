@@ -36,7 +36,7 @@ async function load_projects(){
                         `
                     ).join('')}
                 </div>
-                <div class = "explore-more-tag"></div>
+                <!-- <div class = "explore-more-tag"></div> -->
             </div>
         </div>
         `

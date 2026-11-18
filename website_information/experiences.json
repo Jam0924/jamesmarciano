@@ -1,50 +1,34 @@
 [
     {
-        "title": "Placeholder Title 1",
+        "title": "College Shadowing Initative",
         "location": "Placeholder, NJ",
-        "date": "X 2024 - X 2026",
+        "date": "Sep 2026 - Present",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "briefDesc": "Across the country there are many high school students who are not sure what their college major actually entails, or what major they should pick. Seeking to provide advice to high schools in this position, I am currently working with a team of scholars at my university to create a shadowing program for high school students. This shadowing program will allow students to actually see what a day looks like in college, while also getting more insight into what their planned major entails.",
         "tags": ["Community Service"]
     },
     {
-        "title": "Placeholder Title 2",
+        "title": "Local Cleanup Effort",
         "location": "Placeholder, NJ",
-        "date": "X 2024 - X 2025",
+        "date": "Sep 2026 - Present",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet",
-        "tags": ["Community Service", "Testing Tag"]
+        "briefDesc": "Currently, in my area a local park has an entrance that is over-grown and poorly maintained. Working with a team, my group organized excavation units and volunteers to help clean up the area. After clean-up, new plants were brought in and planted by the community to make the park easily accessible for local residents and tourists.",
+        "tags": ["Community Service"]
     },
     {
-        "title": "Placeholder Title 3",
+        "title": "Machine Learning Researcher",
         "location": "Placeholder, NJ",
-        "date": "X 2023 - X 2024",
+        "date": "June 2026 - August 2026",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit olor sit ametlor sit amet Loresit amet Lorem ipsum",
-        "tags": ["Work Experience", "Testing Tag"]
+        "briefDesc": "As part of a funded resarch opportunity at my university, I worked on proposing and developing solutions to make large langauge models generate code more efficiently. Using a GPU cluster, over 80,000 Python files were parsed into abstract syntax trees to use as training material for an LLM. Leveraging the predictable structure of abstract syntax trees in programs, LLM token fertility was decreased by 61%. ",
+        "tags": ["Research Experience"]
     },
     {
-        "title": "Placeholder Title 3",
-        "location": "Placeholder, NJ",
-        "date": "X 2023 - X 2024",
+        "title": "Littering Initative",
+        "location": "New Jersey",
+        "date": "Sep 2025 - Jan 2026",
         "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit olor sit ametlor sit amet Loresit amet Lorem ipsum",
-        "tags": ["Work Experience", "Testing Tag"]
-    },
-    {
-        "title": "Placeholder Title 3",
-        "location": "Placeholder, NJ",
-        "date": "X 2023 - X 2024",
-        "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit olor sit ametlor sit amet Loresit amet Lorem ipsum",
-        "tags": ["Work Experience", "Testing Tag"]
-    },
-    {
-        "title": "Placeholder Title 3",
-        "location": "Placeholder, NJ",
-        "date": "X 2023 - X 2024",
-        "imageName": "none",
-        "briefDesc": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit olor sit ametlor sit amet Loresit amet Lorem ipsum",
-        "tags": ["Work Experience", "Testing Tag"]
+        "briefDesc": "As part of a community service program at my unviersity, we developed a littering initative that sought to engage highschoolers in local issues. High schoolers were guided through a reesarch project on a local littering issue, and developed proposals on how the issue could be fixed or mitigated in the future. These proposals were then formally presented at a research forum, giving the students real experience on researching and solving issues in their area.",
+        "tags": ["Community Service"]
     }
 ]

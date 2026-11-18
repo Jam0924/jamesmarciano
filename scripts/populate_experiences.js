@@ -39,7 +39,7 @@ async function load_experiences(){
                     `
                 ).join('')}
             </div>
-            <div class = "explore-more-tag"></div>
+            <!-- <div class = "explore-more-tag"></div> -->
         </div>
         `
 

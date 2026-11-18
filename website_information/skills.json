@@ -1,31 +1,35 @@
 [
     {
-        "imageName": "none",
-        "skill": "C++"
-    },
-    {
-        "imageName": "none",
+        "imageName": "HTML.png",
         "skill": "HTML"
     },
     {
-        "imageName": "none",
+        "imageName": "CSS.png",
         "skill": "CSS"
     },
     {
-        "imageName": "none",
+        "imageName": "JavaScript-logo.png",
         "skill": "JavaScript"
     },
     {
-        "imageName": "none",
-        "skill": "x86-64 Assembly"
+        "imageName": "python.png",
+        "skill": "Python"
     },
     {
-        "imageName": "none",
+        "imageName": "C.png",
+        "skill": "C"
+    },
+    {
+        "imageName": "C++.png",
+        "skill": "C++"
+    },
+    {
+        "imageName": "Bash.png",
         "skill": "Bash"
     },
     {
-        "imageName": "none",
-        "skill": "Python"
+        "imageName": "assembly.png",
+        "skill": "x86-64 Assembly"
     }
     
 ]
