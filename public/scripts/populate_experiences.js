@@ -13,9 +13,11 @@ async function load_experiences(){
             <div class = "experience-title">
                 <p>${title}</p>
             </div>
+            <!--
             <div class = "experience-location">
                 <p class = experience-location-text>${location}</p>
             </div>
+            -->
 
             <div class = "experience-date">
                 <p class = "experience-date-text">${date}</p>
